@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clicker Peli</title>
+  <link rel="stylesheet" href="tausta.css">
+  
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Clicker Peli</h1> 
+<p>Clickaa kuvaketta ansaitaksesi pisteitä!</p>
+<input type="image" src="ffdpy.png" width="150px" onclick="clickButton()">
+
+
+<p>Pisteet: <span id="points">0</span></p>
+<p>Pisteet per click: <span id="pointsPerClick">1</span></p>
+
+<h2>Päivitykset</h2>
+<button id="upgradeButton" onclick="buyUpgrade()">Osta päivitys (Hinta: <span id="upgradeCost">10</span>)</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>
